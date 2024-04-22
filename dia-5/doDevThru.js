@@ -22,18 +22,18 @@ do {
 } while (isNaN(opcao) || opcao < 1 || opcao > 4);
 
 function calcularLitrosAbastecidos(valor, preco) {
-    return (valor / preco).toFixed(3); // Arredonda para duas casas decimais
+    return (valor / preco).toFixed(2); // Arredonda para duas casas decimais
 }
 
 switch (opcao) {
     case 1:
-        let precoGasolina = 1.667;
+        let precoGasolina = 1.844;
         let valorGasolina = Number(prompt(`Escolha o valor monetário que deseja abastecer. Preço = ${precoGasolina} €/litro`));
         let litrosAbastecidosGasolina = calcularLitrosAbastecidos(valorGasolina, precoGasolina);
         console.log (`Foram abastecidos ${litrosAbastecidosGasolina} litros de gasolina.`);
         break;
     case 2:
-        let precoGasoleo = 1.557;
+        let precoGasoleo = 1.704;
         let valorGasoleo = Number(prompt(`Escolha o valor monetário que deseja abastecer. Preço = ${precoGasoleo} €/litro`));
         let litrosAbastecidosGasoleo = calcularLitrosAbastecidos(valorGasoleo, precoGasoleo);
         console.log (`Foram abastecidos ${litrosAbastecidosGasoleo} litros de gasóleo.`);
