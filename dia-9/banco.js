@@ -8,8 +8,9 @@
 // - 1º ano aumenta 1,5% e a partir do 2º ano os aumentos correspondem ao dobro da percentagem do ano anterior
 // - Apresentar os valores com o ano correspondente no formato "2024 - ****€"
 
-let confirmar = "n";
 let salarioAtual;
+let anoAtual = new Date().getFullYear();
+let confirmar = "n";
 
 while (confirmar != "s") {
     let nome = prompt("Digita o teu nome");
@@ -29,5 +30,5 @@ for (let ano = 1; ano <= 10; ano++) {
     salarioAtual += salarioAtual * aumento
     aumento *= 2
 
-    console.log((2024 + ano) + " = €" + salarioAtual.toFixed(2));
+    console.log((anoAtual + ano) + " = €" + salarioAtual.toFixed(2));
 }
