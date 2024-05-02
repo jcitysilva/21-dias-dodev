@@ -51,7 +51,7 @@ for (let i = 0; i < modelos.length; i++) {
 //     }
 // }
 
-// Ordenar por preço: Após Refatoração
+// Ordenar por preço (menor para o maior): Após Refatoração
 for (let i = 0; i < valores.length - 1; i++) {
     for (let j = 0; j < valores.length - i - 1; j++) {
         if (parseInt(valores[j]) > parseInt(valores[j + 1])) {
