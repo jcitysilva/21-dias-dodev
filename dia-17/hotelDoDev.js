@@ -77,7 +77,7 @@ function RegistaReserva() {
         if (diaSaida < diaEntrada) [
             console.log("O dia de saída deve ser maior do que o dia de entrada")
         ]
-    } while (diaSaida <diaEntrada)
+    } while (diaSaida < diaEntrada)
 
     let reserva = new Reserva(idReserva, idHotel, nome, diaEntrada, diaSaida)
     idReserva++
@@ -94,7 +94,7 @@ function RegistaReserva() {
 function ProcurarReservasPeloHotel(idHotel) {
     reservas.forEach(reserva => {
         if (idHotel == reserva.IdHotel) {
-            let i = idHotel -1
+            let i = idHotel - 1
             console.log("hotel:", hoteis[i].Nome)
             console.log("responsável:", reserva.Responsavel)
             console.log("Dia de entrada:", reserva.DiaEntrada)
